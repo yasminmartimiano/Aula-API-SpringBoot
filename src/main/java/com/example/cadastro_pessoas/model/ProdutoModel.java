@@ -11,29 +11,27 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "produtos")
+@Table(name = "Produtos")
 @Getter
 @Setter
-/**
- * 
- */
 @NoArgsConstructor
+
 public class ProdutoModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(length = 100, nullable = false)
+    @Column(nullable = false)
     private String nome;
-
-    @Column(nullable = false, precision = 10, scale = 2)
+    
+    @Column(name = "preco", nullable = false)
     private Double preco;
 
     @Column(nullable = false)
     private Integer quantidadeEstoque;
 
-    @Column(columnDefinition = "TEXT")
+    @Column(length = 200)
     private String descricao;
 
 }

@@ -7,4 +7,5 @@ import com.example.cadastro_pessoas.model.ProdutoModel;
 
 @Repository
 public interface ProdutoRepository extends JpaRepository<ProdutoModel, Long> {
+
 }
