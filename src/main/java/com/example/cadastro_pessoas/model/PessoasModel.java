@@ -17,7 +17,7 @@ import lombok.Setter;                        // Lombok - Gera os métodos SET au
 @Entity
 
 // Anotação para definir o nome da tabela que será criada no banco
-@Table(name = "table_name") // Aqui você pode mudar para o nome desejado, por exemplo, "pessoas"
+@Table(name = "pessoas") // Aqui você pode mudar para o nome desejado, por exemplo, "pessoas"
 
 // Lombok - Gera automaticamente os métodos getters e setters
 @Getter
