@@ -58,3 +58,16 @@ CREATE TABLE ItensCompra (
   FOREIGN KEY (compra_id) REFERENCES Compras(id),
   FOREIGN KEY (produto_id) REFERENCES Produtos(id)
 );
+
+DROP TABLE IF EXISTS ItensCompra;
+CREATE TABLE ItensCompra (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  compra_id INT NOT NULL,
+  produto_id INT NOT NULL,
+  quantidade INT NOT NULL,
+  precoUnitario DECIMAL(10,2) NOT NULL,
+  FOREIGN KEY (compra_id) REFERENCES Compras(id),
+  FOREIGN KEY (produto_id) REFERENCES Produtos(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+ALTER TABLE ItensCompra DROP FOREIGN KEY itenscompra_ibfk_2;

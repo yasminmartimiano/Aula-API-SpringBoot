@@ -1,6 +1,7 @@
 package com.example.cadastro_pessoas.model;
 import java.time.LocalDateTime;
 import java.util.List;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,7 +13,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "Compras")
+@Table(name = "compras")
 public class CompraModel {
 
     @Id
