@@ -25,7 +25,6 @@ public class ProdutoModel {
     @Column(nullable = false)
     private String nome;
     
-    @Column(name = "preco", nullable = false)
     private Double preco;
 
     @Column(nullable = false)
