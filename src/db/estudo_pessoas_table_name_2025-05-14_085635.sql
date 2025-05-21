@@ -69,5 +69,3 @@ CREATE TABLE ItensCompra (
   FOREIGN KEY (compra_id) REFERENCES Compras(id),
   FOREIGN KEY (produto_id) REFERENCES Produtos(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-ALTER TABLE ItensCompra DROP FOREIGN KEY itenscompra_ibfk_2;
